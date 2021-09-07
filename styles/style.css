@@ -112,6 +112,33 @@ dt:nth-of-type(1){ grid-area: html-dt; }
 dt:nth-of-type(2){ grid-area: css-dt; transform: translateY(1rem);}
 dt:nth-of-type(3){ grid-area: js-dt; }
 
+hr {
+  height: 3px;
+  width: 50px;
+  background: cyan;
+  border: none;
+  margin-bottom: -150px;
+  transition:.25s;
+  transform: translateY(1rem);
+  opacity:0;
+  margin-left:0;
+}
+
+dt:nth-of-type(1):hover ~ hr {
+  margin-right:-30px; transform: translateY(1rem);
+  opacity:1;
+}
+
+dt:nth-of-type(2):hover ~ hr {
+  margin-right:-250px; transform: translateY(2rem);
+  opacity:1;
+}
+
+dt:nth-of-type(3):hover ~ hr {
+  margin-right:-500px; transform: translateY(1rem);
+  opacity:1;
+}
+
 dd {
   margin:0;
   padding-left:.3rem;
